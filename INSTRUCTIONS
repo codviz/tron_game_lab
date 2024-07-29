@@ -38,6 +38,7 @@ Exercises
 14. In the enemy_player.py file EnemyPlayer class there is an update_position() method. The method currently moves the enemy_player forward. However, it has no implementation of directional change in it whatsoever. Implement more dynamic movement to the update_position() method in the EnemyPlayer class in whatever way you see fit. Hint: Get creative, how do you play the game? How could you mirror something like your own playstyle in NPC movement? No need to overthink it though.
 
 15. Create a win, lose and tie condition inside of the previously created endgame check if statements inside of the update() method in the tron_game.py file.
+
 Extra Credit
 
 1. Create multiple instances of the EnemyPlayer class in the tron_game.py file. Add as many as you see fit. Add them at different starting positions and directions throughout the window.
