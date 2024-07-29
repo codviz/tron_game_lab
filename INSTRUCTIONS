@@ -1,0 +1,51 @@
+Games Computers Play
+Lab: Tron Light Cycles Game
+
+
+Goal
+The goal of this lab is to create a fully functional version of the classic arcade Tron Light Cycles Game using Mikes graphics library. Read this entire document before writing any code. 
+
+Exercises
+
+0. Download and unzip grid_graphics.py and make sure that the file is in your working directory. Also download and unzip tron_game.py and human_player.py and make sure the files are also in your working directory. Think through the starter code in tron_game.py and player.py. 	
+
+1. In the update() method in tron_game.py use for loops to create a border for the window. Create individual squares, whatever color you like, to create the border.
+
+2. In the human_player.py file HumanPlayer class modify the update_position() method so that it changes the self.x_position and self.y_position variables by self.dx and self.dy.
+
+3. Make it so that the update_position() method is called every time the update() method is called in the tron_game.py file.
+
+4. In the key_handler() method in the tron_game.py file make it so that the key input of ‘a’ changes the human_player direction by ‘left’ and that the key input of ‘d’ changes the human_player direction by right. Use the HumanPlayer classes change_direction() method to achieve this.
+
+5. Add the location points of all border squares as pairs to the points_occupied list.
+
+6. Make it so that each time the update() method is called in the tron_game.py file the current x and y position of the human_player are added as a pair to the points_occupied list. Hint: You can access the current position of the human_player in tron_game.py by calling human_player.x_position and human_player.y_position as these are instance variables of the HumanPlayer class.
+
+7. Create an endgame check using an if statement in the update() method in the tron_game.py file that ends the game if the current x and y position of the human_player are in the  points_occupied list.
+
+8. Download and unzip the enemy_player.py file and make sure that the file is in your working directory. At the start of the tron_game.py file include the code: from enemy_player import EnemyPlayer.
+
+9. Create an instance of the enemy_player.py file EnemyPlayer class in the tron_game.py file named enemy_player. Remember to satisfy the criteria for all required parameters when creating a new instance of the EnemyPlayer class. As this class extends the HumanPlayer class the two have the same required parameters. 
+
+10. Make it so that each time the update() method is called in the tron_game.py file the enemy_player is drawn at its x and y position. 
+
+11. Make it so that each time the update() method is called in the tron_game.py file the current x and y position of the enemy_player are added as a pair to the points_occupied list.
+
+12. Create an additional endgame check using an if statement in the update() method in the tron_game.py file that ends the game if the current x and y position of the enemy_player are in the  points_occupied list.
+
+13. Create a final endgame check using an if statement in the update() method in the tron_game.py file that ends the game if the current x and y position of the enemy_player and the current x and y position of the human_player are equal. This means that they have collided.
+ 
+14. In the enemy_player.py file EnemyPlayer class there is an update_position() method. The method currently moves the enemy_player forward. However, it has no implementation of directional change in it whatsoever. Implement more dynamic movement to the update_position() method in the EnemyPlayer class in whatever way you see fit. Hint: Get creative, how do you play the game? How could you mirror something like your own playstyle in NPC movement? No need to overthink it though.
+
+15. Create a win, lose and tie condition inside of the previously created endgame check if statements inside of the update() method in the tron_game.py file.
+Extra Credit
+
+1. Create multiple instances of the EnemyPlayer class in the tron_game.py file. Add as many as you see fit. Add them at different starting positions and directions throughout the window.
+
+2. Make it so that the EnemyPlayer class update_position() method takes in the points_occupied list as a parameter. Use this information to inform the EnemyPlayer class to make more intelligent directional change decisions. 
+
+3. Increase the speed of the game after each human_player win in order to successively increase the difficulty of the game.
+
+
+
+
