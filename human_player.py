@@ -13,7 +13,8 @@ class HumanPlayer:
 
     def update_position(self):
         #every time this method is called, it should update the x_pos and y_pos of this class
-        pass
+        self.x_pos += self.dx
+        self.y_pos += self.dy
 
     def change_direction(self,direction):
         if direction == 'left':
