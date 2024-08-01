@@ -65,7 +65,7 @@ for i in range (61):
 
 for i in range(1,40):
     points_occupied.append((0,i))
-    points_occupied.append((61,i))
+    points_occupied.append((60,i))
 
 if __name__ == "__main__":
     play()
