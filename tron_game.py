@@ -23,7 +23,7 @@ def game_loop():
 
 def update():
     #method called every loop cycle
-    pass
+    gg.paint((human_player.x_pos,human_player.y_pos),'blue')
 
 
 def key_handler(k):
